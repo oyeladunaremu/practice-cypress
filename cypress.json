@@ -1,0 +1,7 @@
+{
+    "baseUrl": "http://zero.webappsecurity.com/index.html",
+    "viewportHeight": 900,
+    "viewportWidth": 1400,
+    "defaultCommandTimeout": 15000,
+    "testFile": "**/*.{feature, features}"
+}

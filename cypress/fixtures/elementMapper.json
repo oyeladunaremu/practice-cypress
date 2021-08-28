@@ -1,0 +1,13 @@
+{
+"searchBox": ".navbar-search.pull-right",
+"searchItembox": "input#searchTerm",
+"searchItem": "pay",
+"signinButton": "button#signin_button",
+"loginBox": "input#user_login",
+"passwordBox": "input#user_password",
+"userName": "username",
+"passWord": "password",
+"keepSignedin": "input#user_remember_me",
+"signIn": ".btn-primary",
+"invalidPassword": "passwords"
+}
