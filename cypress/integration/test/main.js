@@ -8,6 +8,18 @@ context('Web App Security site', ()=>{
     cy.visit('http://zero.webappsecurity.com/index.html');
   });
 
+
+  it('Test Search item on Webappsecurity site', () => {
+    //Make a search using the word "pay"
+    cy.fixture("elementMapper").then((em)=>{
+    cy.get(em.searchBox).type(em.searchItem);
+    //cy.get('.navbar-search.pull-right').type('pay{enter}');
+    //cy.type('pay{enter}'); 
+
+    })
+
+});
+
   it('Test Valid Signin on Webappsecurity site', () => {
     //Make a search using the word "pay"
     cy.fixture("elementMapper").then((em)=>{
@@ -15,7 +27,7 @@ context('Web App Security site', ()=>{
     //pages.insertValue(em.searchBox, em.searchItem);
     pages.clickElement(em.signinButton);
     pages.typeAValue(em.loginBox, em.userName);
-    pages.typeAValue(em.passwordBox, em.passwordBox);
+    pages.typeAValue(em.passwordBox, em.passWord);
     cy.wait(3000)
     //cy.get('input#user_remember_me').click();
     //cy.get(em.signIn).click();
